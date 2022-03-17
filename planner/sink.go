@@ -8,7 +8,7 @@ import (
 	"time"
 
 	u "github.com/araddon/gou"
-	"github.com/lytics/grid"
+	"github.com/lytics/grid/v3"
 
 	"github.com/araddon/qlbridge/datasource"
 	"github.com/araddon/qlbridge/exec"

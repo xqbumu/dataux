@@ -58,7 +58,7 @@ func (m *ResultReader) Run() error {
 
 	// projection Columns
 	cols := m.Req.p.Proj.Columns
-	client := lytics.NewLytics(m.Req.apiKey, "", nil)
+	client := lytics.NewLytics(m.Req.apiKey, nil)
 
 	colNames := make(map[string]int, len(m.Req.p.Proj.Columns))
 	for i, col := range m.Req.p.Proj.Columns {
@@ -80,7 +80,7 @@ func (m *ResultReader) Run() error {
 		}
 
 		row := make([]driver.Value, len(colNames))
-		eh := u.JsonHelper(e)
+		eh := u.JsonHelper(e.Fields)
 		for i, col := range cols {
 			switch col.Type {
 			case value.BoolType:

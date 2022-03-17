@@ -263,7 +263,7 @@
   revision = "c0f04526e0f67775de29a2e259bf17d3f6c20866"
 
 [[projects]]
-  name = "github.com/lytics/grid"
+  name = "github.com/lytics/grid/v3"
   packages = [
     ".",
     "codec",

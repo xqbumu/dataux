@@ -7,7 +7,7 @@ import (
 	"time"
 
 	u "github.com/araddon/gou"
-	"github.com/lytics/grid"
+	"github.com/lytics/grid/v3"
 )
 
 const timeout = 5 * time.Second
@@ -205,7 +205,7 @@ func (p *peerList) watchPeers(ctx context.Context, client *grid.Client, onNew Ne
 			//u.Debugf("event %v", event)
 			p.mu.Lock()
 			//u.Debugf("event %v", event)
-			switch event.Type {
+			switch event.Type() {
 			case grid.WatchError:
 				// Error occured watching peers, deal with error.
 				u.Errorf("watch error %#v", event)

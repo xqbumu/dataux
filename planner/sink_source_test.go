@@ -14,8 +14,8 @@ import (
 	"github.com/araddon/qlbridge/plan"
 	"github.com/araddon/qlbridge/rel"
 	"github.com/araddon/qlbridge/schema"
-	"github.com/coreos/etcd/clientv3"
-	"github.com/lytics/grid"
+	"go.etcd.io/etcd/client/v3"
+	"github.com/lytics/grid/v3"
 	"github.com/stretchr/testify/assert"
 )
 

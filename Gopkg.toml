@@ -91,7 +91,7 @@
   name = "github.com/lytics/go-lytics"
 
 [[constraint]]
-  name = "github.com/lytics/grid"
+  name = "github.com/lytics/grid/v3"
   version = "3.0.0"
 
 [[constraint]]

@@ -47,7 +47,7 @@ cd $GOPATH/src/github.com/lytics/confl && git checkout master && git pull
 cd $GOPATH/src/github.com/lytics/datemath && git checkout master && git pull
 cd $GOPATH/src/github.com/lytics/dfa && git checkout master && git pull
 cd $GOPATH/src/github.com/lytics/go-lytics && git checkout master && git pull
-cd $GOPATH/src/github.com/lytics/grid && git checkout master && git pull
+cd $GOPATH/src/github.com/lytics/grid/v3 && git checkout master && git pull
 cd $GOPATH/src/github.com/lytics/retry && git checkout master && git pull
 cd $GOPATH/src/github.com/mattbaird/elastigo && git checkout master && git pull
 cd $GOPATH/src/github.com/mb0/glob && git checkout master && git pull

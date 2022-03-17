@@ -9,7 +9,7 @@ import (
 	"github.com/araddon/qlbridge/exec"
 	"github.com/araddon/qlbridge/plan"
 	"github.com/lytics/dfa"
-	"github.com/lytics/grid"
+	"github.com/lytics/grid/v3"
 )
 
 type (

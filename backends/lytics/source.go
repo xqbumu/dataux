@@ -61,7 +61,7 @@ func (m *Source) Setup(ss *schema.Schema) error {
 		return fmt.Errorf(`Requires Lytics "apikey"`)
 	}
 
-	m.client = lytics.NewLytics(m.apiKey, "", nil)
+	m.client = lytics.NewLytics(m.apiKey, nil)
 	if err := m.loadSchema(); err != nil {
 		u.Errorf("could not load es tables: %v", err)
 		return err
